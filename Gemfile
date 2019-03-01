@@ -49,3 +49,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'bundler', '>= 1.8.4'
+
+source 'http://insecure.rails-assets.org/' do
+  gem 'rails-assets-particles.js'
+end
