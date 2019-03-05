@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: http://insecure.rails-assets.org/
   specs:
     actioncable (5.1.6.1)
       actionpack (= 5.1.6.1)
@@ -113,6 +114,7 @@ GEM
       bundler (>= 1.3.0)
       railties (= 5.1.6.1)
       sprockets-rails (>= 2.0.0)
+    rails-assets-particles.js (2.0.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -194,6 +196,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 3.7)
   rails (~> 5.1.6, >= 5.1.6.1)
+  rails-assets-particles.js!
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_form
