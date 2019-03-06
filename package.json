@@ -2,6 +2,10 @@
   "name": "cogo",
   "private": true,
   "dependencies": {
+    "@rails/webpacker": "3.5",
     "particles.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
   }
 }
