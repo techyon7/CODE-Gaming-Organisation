@@ -1539,4 +1539,3 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
   xhr.send();
 
 };
-export { particlesJS };
