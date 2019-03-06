@@ -7,3 +7,11 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
+
+import 'particles.js';
+
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
