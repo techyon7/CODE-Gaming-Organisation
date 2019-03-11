@@ -2,3 +2,72 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face {
+    font-family: farray;
+    src: url('Farray-Regular.woff') format("woff");
+}
+@font-face {
+    font-family: nordic;
+    font-weight: bold;
+    src: url('Nordic Alternative Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: barlow;
+    src: url('BarlowSemiCondensed-Regular.woff') format("woff");
+}
+body{
+  overflow: hidden;
+}
+#particles-js canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#banner{
+  text-align: center;
+}
+#banner-name{
+  color: #333333;
+  font-family: farray;
+  font-size: 80px;
+  vertical-align: top;
+}
+#banner-logo{
+  color: #1EAFED;
+  font-size: 90px;
+  font-family: nordic;
+}
+#description{
+  margin-left: 120px;
+  color: #333333;
+  font-size: 30px;
+  font-family: barlow;
+  width: 40%;
+}
+#newsletter{
+  height: 50px;
+}
+#newsletter-input{
+  height: 24px;
+  width: 80%;
+  border-style: solid;
+  border-color: #1EAFED;
+  padding: 10px;
+  border-radius: 24px;
+}
+#newsletter-submit{
+  vertical-align: top;
+  height: 49px;
+  width: 50px;
+  border-radius: 30px;
+  border-style: none;
+  background-color: #1EAFED;
+  cursor: pointer;
+}
+#newsletter-input:invalid {
+    box-shadow: none;
+}
+#newsletter-submit:active{
+  background-color: #333333;
+}
