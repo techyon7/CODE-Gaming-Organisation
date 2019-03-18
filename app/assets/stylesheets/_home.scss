@@ -3,17 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @font-face {
-    font-family: farray;
-    src: url('Farray-Regular.woff') format("woff");
+    font-family: 'farray';
+    src: url('fonts/Farray-Regular.woff') format("woff");
 }
 @font-face {
-    font-family: nordic;
+    font-family: 'nordic';
     font-weight: bold;
-    src: url('Nordic Alternative Regular.ttf') format("truetype");
+    src: url('fonts/Nordic Alternative Regular.ttf') format("truetype");
 }
 @font-face {
-    font-family: barlow;
-    src: url('BarlowSemiCondensed-Regular.woff') format("woff");
+    font-family: 'barlow';
+    src: url('fonts/BarlowSemiCondensed-Regular.woff') format("woff");
 }
 body{
   overflow: hidden;
