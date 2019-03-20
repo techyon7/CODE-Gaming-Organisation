@@ -4,16 +4,16 @@
 
 @font-face {
     font-family: 'farray';
-    src: url('fonts/Farray-Regular.woff') format("woff");
+    src: font-url('Farray-Regular.woff') format("woff");
 }
 @font-face {
     font-family: 'nordic';
     font-weight: bold;
-    src: url('fonts/Nordic Alternative Regular.ttf') format("truetype");
+    src: font-url('NordicAlternativeRegular.ttf') format("truetype");
 }
 @font-face {
     font-family: 'barlow';
-    src: url('fonts/BarlowSemiCondensed-Regular.woff') format("woff");
+    src: font-url('BarlowSemiCondensed-Regular.woff') format("woff");
 }
 body{
   overflow: hidden;
