@@ -35,6 +35,8 @@ gem 'turbolinks', '~> 5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'json'
 gem 'webpacker', '~> 3.5'
+gem 'omniauth-google-oauth2'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
