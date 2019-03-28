@@ -8,7 +8,8 @@ end
 ruby "2.6.1"
 
 gem 'simple_form'
-gem 'bootstrap-sass'
+gem 'bootstrap'
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 # Use postgresql as the database for Active Record
@@ -34,6 +35,8 @@ gem 'turbolinks', '~> 5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'json'
 gem 'webpacker', '~> 3.5'
+gem 'omniauth-google-oauth2'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

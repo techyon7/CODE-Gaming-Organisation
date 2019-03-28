@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: techyon
+  username: lexp
   password: password1
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
@@ -27,7 +27,7 @@ development:
   <<: *default
   adapter: postgresql
   host: localhost
-  username: techyon
+  username: lexp
   password: password1
   database: cogo_development
 
@@ -64,7 +64,7 @@ development:
 test:
   <<: *default
   database: cogo_test
-  username: techyon
+  username: lexp
   password: password1
 
 # As with config/secrets.yml, you never want to store sensitive information,
