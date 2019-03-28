@@ -5,9 +5,15 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   devise :omniauthable, omniauth_providers: [:google_oauth2]
 
+  has_many :events, through: :signed_events
+  has_many :hardwares
+  
+
+
   def self.from_omniauth(access_token)
     data = access_token.info
     user = User.where(email: data['email']).first
+    
 
     # The user is created, if they don't exist
      unless user
