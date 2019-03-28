@@ -17,12 +17,14 @@
   </div>
 
   <div id="description">
-    <p id="description-text">CODE Gaming Organisation(COGO) is about you and the games you love. Whether you are new or long into gaming, enjoy competing or are more on the casual side of things, we want to welcome you to join our community.<br><br> Stay in the loop?</p>
+    <p id="description-text">CODE Gaming Organisation (COGO) is about you and the games you love. Whether you are new or long into gaming, enjoy competing or are more on the casual side of things, we want to welcome you to join our community.<br><br> Stay in the loop?</p>
     <div id="newsletter">
       <input id="newsletter-input" type="email" name="email" value="">
       <button id="newsletter-submit" type="submit" name="submit"></button>
     </div>
   </div>
+  <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
+
 
 </body>
 
