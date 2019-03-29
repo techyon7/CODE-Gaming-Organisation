@@ -36,6 +36,8 @@ gem 'turbolinks', '~> 5'
 gem 'json'
 gem 'webpacker', '~> 3.5'
 gem 'omniauth-google-oauth2'
+gem 'figaro'
+
 
 
 # Use Capistrano for deployment
