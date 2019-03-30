@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+
   get 'user/update'
+  get 'user_events/update'
+
+  get 'user_events/delete'
 
   root to: 'pages#home'
 
