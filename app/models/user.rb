@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   devise :omniauthable, omniauth_providers: [:google_oauth2]
 
-  has_many :events, through: :signed_events
+  has_many :events, through: :user_events
   has_many :hardwares
   
 
