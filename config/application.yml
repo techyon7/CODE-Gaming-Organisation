@@ -13,3 +13,7 @@
 
 client_id: "918922017837-ql1e93a20bl0oqqk2vodraore71i20tr.apps.googleusercontent.com"
 client_secret: "Z-v4HeUkWJyGXhvIFUifxfli"
+
+production:
+  client_id: "918922017837-ql1e93a20bl0oqqk2vodraore71i20tr.apps.googleusercontent.com"
+  client_secret: "Z-v4HeUkWJyGXhvIFUifxfli"
