@@ -4,7 +4,7 @@ class CreateHardwares < ActiveRecord::Migration[5.1]
       t.string :name
       t.text :description
       t.float :price
-      t.string :type
+      t.string :purpose
       t.string :owner_id
       t.string :renter_id
 
