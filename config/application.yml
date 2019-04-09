@@ -17,3 +17,9 @@ client_secret: "Z-v4HeUkWJyGXhvIFUifxfli"
 production:
   client_id: "918922017837-ql1e93a20bl0oqqk2vodraore71i20tr.apps.googleusercontent.com"
   client_secret: "Z-v4HeUkWJyGXhvIFUifxfli"
+
+  cloud_name: "djnuboqcx"
+  api_key: "311258852557396"
+  api_secret: "vg5-JD6vXN8fGwcMec_PgfuyUSQ"
+  secure: true
+  cdn_subdomain: true
