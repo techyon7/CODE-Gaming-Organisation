@@ -1,40 +1,41 @@
 <html>
 
-<head>
-  <title>Home</title>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
+  <head>
+    <title>Home</title>
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application' %>
+      <%= javascript_pack_tag 'application' %>
 
-</head>
+  </head>
 
-<body>
+  <body>
+  <div class="wrapper">
+    <div class="image-container">
+        <%= image_tag ("Logo.png"), id:"vidya-logo"%>
+      <div class="header">
+        <% if current_user%>
+          <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-success logout-button", method: :delete %>
 
-  <div id="particles-js"></div>
+        <% else %>
+          <%= link_to "Sign in", new_user_session_path, class: "btn btn-success", id:"login-button"%>
+          <%= link_to "Join", new_user_registration_path, class: "btn btn-success", id:"signup-button-v2" %>
 
-  <div id="banner">
-    <h1 id="banner-name">C<span id="banner-logo">O</span>GO DE NNECT MPARE </h1>
-  </div>
+        <% end %>
+      </div>
+      <div class="first-section">
+        <div id="banner">
+          <div id="title">
+            <h1 id="title-name"><span id="title-logo"></span>Say Hello to Vidya Oraganization</h1>
+          </div>
+          <div id="description">
+            <p id="description-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam voluptatem quia voluptas</p>
+          </div>
+        </div>
+        <%= link_to "Join", new_user_registration_path, class: "btn btn-primary", id:"signup-button" %>
 
-  <div id="description">
-    <p id="description-text">CODE Gaming Organisation (COGO) is about you and the games you love. Whether you are new or long into gaming, enjoy competing or are more on the casual side of things, we want to welcome you to join our community.<br><br> Stay in the loop?</p>
-    <div id="newsletter">
-      <input id="newsletter-input" type="email" name="email" value="">
-      <button id="newsletter-submit" type="submit" name="submit"></button>
+      </div>
     </div>
   </div>
-
-  <% if current_user%>
-    <%= link_to "sign out", destroy_user_session_path, method: :delete %>
-
-  <% else %>
-    <%= link_to "Sign up", new_user_registration_path %>
-    <%= link_to "Sign in", new_user_session_path%>
-    <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
-
-  <% end %>
-
-
-</body>
+  </body>
 
 </html>
