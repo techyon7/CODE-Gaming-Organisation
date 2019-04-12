@@ -9,33 +9,63 @@
   </head>
 
   <body>
-  <div class="wrapper">
-    <div class="image-container">
+    <div class="wrapper">
+      <div class="image-container">
         <%= image_tag ("Logo.png"), id:"vidya-logo"%>
-      <div class="header">
-        <% if current_user%>
-          <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-success logout-button", method: :delete %>
+        <div class="header">
+          <% if current_user%>
+            <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-success logout-button", method: :delete %>
 
-        <% else %>
-          <%= link_to "Sign in", new_user_session_path, class: "btn btn-success", id:"login-button"%>
-          <%= link_to "Join", new_user_registration_path, class: "btn btn-success", id:"signup-button-v2" %>
+          <% else %>
+            <%= link_to "Sign in", new_user_session_path, class: "btn btn-success", id:"login-button"%>
+            <%= link_to "Join", new_user_registration_path, class: "btn btn-success", id:"signup-button-v2" %>
 
-        <% end %>
-      </div>
-      <div class="first-section">
-        <div id="banner">
-          <div id="title">
-            <h1 id="title-name"><span id="title-logo"></span>Say Hello to Vidya Oraganization</h1>
+          <% end %>
+        </div>
+        <div class="first-section">
+          <div id="banner">
+            <div id="title">
+              <h1 id="title-name"><span id="title-logo"></span>Say Hello to Vidya Oraganization</h1>
+            </div>
+            <div id="description">
+              <p id="description-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam voluptatem quia voluptas</p>
+            </div>
           </div>
-          <div id="description">
-            <p id="description-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam voluptatem quia voluptas</p>
+          <%= link_to "Join", new_user_registration_path, class: "btn btn-primary", id:"signup-button" %>
+
+        </div>
+      </div>
+      <div class="second-section">
+        <div class="card-container">
+          <div id="card">
+            <%= image_tag ("072-tournament@3x.png"), id:"card-logo"%>
+            <h2>Event</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+          </div>
+          <div id="card">
+            <%= image_tag ("056-gaming-4@3x.png"), id:"card-logo"%>
+            <h2>Player Connect</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+          </div>
+          <div id="card">
+            <%= image_tag ("068-agreement@3x.png"), id:"card-logo"%>
+            <h2>Marketplace</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
           </div>
         </div>
-        <%= link_to "Join", new_user_registration_path, class: "btn btn-primary", id:"signup-button" %>
-
+      </div>
+      <div class="third-section">
+        <div class="card-split">
+          <div id="section-one">
+            <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h2>
+          </div>
+          <div id="section-two">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis.</p>
+            <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success", id:"signup-button-v3" %>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   </body>
 
 </html>
