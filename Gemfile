@@ -7,7 +7,7 @@ end
 
 ruby "2.6.1"
 
-gem 'simple_form'
+# gem 'simple_form'
 gem 'bootstrap'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -36,7 +36,7 @@ gem 'turbolinks', '~> 5'
 gem 'json'
 gem 'webpacker', '~> 3.5'
 gem 'omniauth-google-oauth2'
-gem 'figaro'
+# gem 'figaro'
 gem 'cloudinary'
 
 

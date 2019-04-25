@@ -15,13 +15,13 @@ document.addEventListener("turbolinks:load", function() {
             }	
            },	
            "color": {	
-            "value": "#1eafed"	
+            "value": "#eeeeee"	
            },	
            "shape": {	
             "type": "circle",	
             "stroke": {	
              "width": 0,	
-             "color": "#554aff"	
+             "color": "#000000"	
             },	
             "polygon": {	
              "nb_sides": 5	
@@ -55,7 +55,7 @@ document.addEventListener("turbolinks:load", function() {
            "line_linked": {	
             "enable": true,	
             "distance": 144.30708547789706,	
-            "color": "#1eafed",	
+            "color": "#eeeeee",	
             "opacity": 0.4489553770423464,
             "width": 1	
            },	
