@@ -1,3 +1,130 @@
-// Place all the styles related to the Events controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.middle-section{
+    margin-left: 200px;
+    margin-right: 10%;
+    background-color: #41436a;
+    color: #eeeeee;
+    font-family: barlow;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 3%;
+
+    
+}
+
+.event-search{
+    width: 45%;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: #f54768;
+    background-color: transparent;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: x-large;
+    outline: none;
+    color: #eeeeee;
+    padding-left: 13px;
+
+}
+
+
+
+.event-split{
+    display: flex;
+    background: linear-gradient(to right, #ff5d7c 20%, #ff9678);
+    justify-content: space-around;
+    width: 90%;
+    padding: 3% 3% 3% 2%;
+    border-radius: 20px;
+    color: #1d1919;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    #event-one{
+        display: flex;
+        width: 50%;
+        padding-right: 2%;
+        flex-direction: column;
+      }
+      #event-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+      }
+}
+
+.event-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.event-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.special-logo{
+    height: 40px;
+
+}
+
+.special-address{
+    height: 35px;
+    padding-right: 6%;
+}
+
+
+.special-appointment{
+    height: 38px;
+    padding-right: 6%;
+
+}
+
+.data-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        margin: 0;
+    }
+
+}
+
+.special-content{
+    ul{
+        display: flex;
+        list-style-type: none;
+        flex-grow: auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+ 
+.selector{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.special{
+    margin: auto;
+    padding: 10px 4px 0px 0px;
+
+    p{
+        margin: 0;
+        border: 1px solid #1d1919;
+        border-radius: 20px;
+        width: auto;
+        padding: 6px 15px 6px 15px;
+    }
+
+}
+

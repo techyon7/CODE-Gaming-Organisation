@@ -1,0 +1,74 @@
+.profile-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: barlow;
+    font-size: 22px;
+    color: #eeeeee;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #41436a;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to right, 
+      #f54768, 
+      rgba(245, 71, 104, 100)
+    ) 1 100%;
+    border-right: 0;
+    
+}
+
+.friend-card{
+  background: linear-gradient(to right, #ff5d7c 20%, #ff9678);
+  border-radius: 20px;
+  color: #1d1919;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5%;
+  padding-top: 5%;
+  margin-bottom: 10%; 
+}
+
+.friend-info{
+  display: flex;
+  justify-content: space-around;
+
+}
+.friend-logo{
+  height: 84px;
+  margin-right: 10px
+}
+.friend-location{
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-level{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  h3{
+    font-size: 37px;
+  }
+}
+
+.friend-links{
+  display: flex;
+}
+
+.linked-logo{
+  height: 40px;
+  margin-bottom: 3%;
+  margin-right: 6%;
+}
