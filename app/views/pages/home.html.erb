@@ -15,10 +15,11 @@
         <div class="header">
           <% if current_user%>
             <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-success logout-button", method: :delete %>
-
+            <%= link_to "Events", events_index_path, class: "btn btn-success logout-button" %>
           <% else %>
             <%= link_to "Sign in", new_user_session_path, class: "btn btn-success", id:"login-button"%>
             <%= link_to "Join", new_user_registration_path, class: "btn btn-success", id:"signup-button-v2" %>
+
 
           <% end %>
         </div>
@@ -28,7 +29,8 @@
               <h1 id="title-name"><span id="title-logo"></span>Say Hello to Vidya Oraganization</h1>
             </div>
             <div id="description">
-              <p id="description-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam voluptatem quia voluptas</p>
+              <p id="description-text">Vidya is about you and the games you love. Whether you are new or long into gaming, enjoy competing or are more on the casual side of things, we want to welcome you to join our community. Our platform offers a variety of neat features you are sure to enjoy!
+</p>
             </div>
           </div>
           <%= link_to "Join", new_user_registration_path, class: "btn btn-primary", id:"signup-button" %>
@@ -39,28 +41,29 @@
         <div class="card-container">
           <div id="card">
             <%= image_tag ("072-tournament@3x.png"), id:"card-logo"%>
-            <h2>Event</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+            <h2>Events</h2>
+            <p> By offering a vast amount of different events to choose from, you are sure to find something you enjoy from PWNing noobs in Call of Duty to just a casual board game evening. Maybe you like to be the party leader? Now you can create and organize your own events!
+</p>
           </div>
           <div id="card">
             <%= image_tag ("056-gaming-4@3x.png"), id:"card-logo"%>
             <h2>Player Connect</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+            <p>Getting bored Solo queueing all the time? None of your IRL friends want to play League at 3am on a Tuesday? Worry no more, with the player connect feature you get connected with people playing the same game but different roles. Finally have a healer in your team!</p>
           </div>
           <div id="card">
             <%= image_tag ("068-agreement@3x.png"), id:"card-logo"%>
             <h2>Marketplace</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+            <p>Our marketplace offers a new way to trade, borrow, lend, sell and buy games and hardware! It’s like craigslist but you don’t get stabbed in the end. </p>
           </div>
         </div>
       </div>
       <div class="third-section">
         <div class="card-split">
           <div id="section-one">
-            <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h2>
+            <h2>It doesn't matter, if you're an old veteran gamer or a new player. We welcome everyone!</h2>
           </div>
           <div id="section-two">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis.</p>
+            <p>The vast commnity of Vidya is waiting for you! Events are taking place and other players are looking forward to see you in action. Okay, I get it, you like reading. When you're ready go and press the button below to join!</p>
             <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success", id:"signup-button-v3" %>
           </div>
         </div>
@@ -70,17 +73,17 @@
           <div id="card">
             <%= image_tag ("011-cooperation@3x.png"), id:"card-logo"%>
             <h2>Cooperation</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+            <p>Have some cool ideas, but can't find the strength to fulfill it? No worries, we got your back. Cooperation goes hand in hand with the community! Together we can achieve any goal. </p>
           </div>
           <div id="card">
             <%= image_tag ("073-tournament-1@3x.png"), id:"card-logo"%>
             <h2>Competetive Integration</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+            <p>Have a solid team and you're up for a challenge? Vidya would like to see teams fight for the crown and gain their fame in community tournaments!</p>
           </div>
           <div id="card">
             <%= image_tag ("053-noob@3x.png"), id:"card-logo"%>
             <h2>Noob Friendly</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+            <p>New to gaming or just new to a game? Well it does not matter! Here you can really get started with it and enjoy your journey. Monster hunter, giant slayer, commander of an army or space pirate - Be what you want!</p>
           </div>
         </div>
       </div>

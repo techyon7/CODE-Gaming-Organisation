@@ -5,11 +5,11 @@
     <% end %>
 
     <ul class="navlist">
-        <li class="element"><%= link_to "Dashboard", current_user %></li>
-        <li class="element"><%= link_to "My Events", current_user %></li>
-        <li class="element"><%= link_to "Player Connect", current_user %></li>
-        <li class="element"><%= link_to "Marketplace", current_user %></li>
-        <li class="element-mid"><%= link_to "Contact", current_user %></li>
-        <li class="element-lower"><%= link_to "Settings", current_user %></li>
+        <li class="element"><%= link_to "Dashboard", events_index_path %></li>
+        <li class="element"><%= link_to "My Events", events_index_path %></li>
+        <li class="element"><%= link_to "Player Connect", events_index_path %></li>
+        <li class="element"><%= link_to "Marketplace", events_index_path %></li>
+        <li class="element-mid"><%= link_to "Contact", events_index_path %></li>
+        <li class="element-lower"><%= link_to "Settings", events_index_path  %></li>
     </ul>
 </div>
