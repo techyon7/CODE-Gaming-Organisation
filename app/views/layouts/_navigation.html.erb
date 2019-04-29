@@ -1,5 +1,9 @@
 <div class="navbar">
-    <%= link_to "APP NAME", root_path, id: "logo" %>
+   
+   <%= link_to root_path do %>
+   <%= image_tag "Logo.png", class: "logo-nav" %>
+    <% end %>
+
     <ul class="navlist">
         <li class="element"><%= link_to "Dashboard", current_user %></li>
         <li class="element"><%= link_to "My Events", current_user %></li>
@@ -7,6 +11,5 @@
         <li class="element"><%= link_to "Marketplace", current_user %></li>
         <li class="element-mid"><%= link_to "Contact", current_user %></li>
         <li class="element-lower"><%= link_to "Settings", current_user %></li>
-
     </ul>
 </div>
