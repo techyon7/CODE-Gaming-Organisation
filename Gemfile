@@ -7,6 +7,12 @@ end
 
 ruby "2.6.3"
 
+# Use grape for custom api
+gem 'grape'
+# Use cors to support cross-site requests
+gem 'rack-cors', :require => 'rack/cors'
+# Use rails serializer to convert into valid json
+gem 'grape-active_model_serializers'
 # gem 'simple_form'
 gem 'bootstrap'
 gem 'devise'
