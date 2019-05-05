@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190328134052) do
+ActiveRecord::Schema.define(version: 20190505153015) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20190328134052) do
     t.text "description"
     t.float "price"
     t.string "purpose"
-    t.string "owner_id"
-    t.string "renter_id"
+    t.bigint "owner_id"
+    t.bigint "renter_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
