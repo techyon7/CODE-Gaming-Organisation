@@ -17,8 +17,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: lexp
-  password: password1
+  username: postgres
+  password: elderswand
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -27,8 +27,8 @@ development:
   <<: *default
   adapter: postgresql
   host: localhost
-  username: lexp
-  password: password1
+  username: postgres
+  password: elderswand
   database: cogo_development
 
   # The specified database role being used to connect to postgres.
@@ -64,8 +64,8 @@ development:
 test:
   <<: *default
   database: cogo_test
-  username: lexp
-  password: password1
+  username: postgres
+  password: elderswand
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
