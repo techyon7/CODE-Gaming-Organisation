@@ -119,6 +119,8 @@ GEM
     grape-active_model_serializers (1.5.2)
       active_model_serializers (>= 0.10.0)
       grape (>= 0.8.0)
+    grape-swagger (0.32.1)
+      grape (>= 0.16.2)
     hashie (3.6.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
@@ -319,6 +321,7 @@ DEPENDENCIES
   devise
   grape
   grape-active_model_serializers
+  grape-swagger
   jquery-rails
   json
   omniauth-google-oauth2
@@ -336,7 +339,7 @@ DEPENDENCIES
   webpacker (~> 3.5)
 
 RUBY VERSION
-   ruby 2.6.1p33
+   ruby 2.6.3p62
 
 BUNDLED WITH
    2.0.1
