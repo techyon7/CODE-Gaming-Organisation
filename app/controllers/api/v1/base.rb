@@ -4,6 +4,7 @@ module API
   module V1
     class Base < Grape::API
       mount API::V1::Hardwares
+      mount API::V1::Events
 
       add_swagger_documentation(
         api_version: "v1",
