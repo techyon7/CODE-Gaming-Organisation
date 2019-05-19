@@ -1,15 +1,10 @@
-<<<<<<< HEAD
-# README
+
 
 # CODE-Gaming-Organisation
 
-# Project Title
-
 Vidya is a eventmanagment platform for gamers by gamers.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## First Steps
 
 To work on the project on a local machine use ```git clone```
 
@@ -25,7 +20,7 @@ Bundler (version 2 or higher)
 
 ```
 
-### Installing
+### Installation
 
 Go into the cloned local folder of the repositiory
 
@@ -46,4 +41,3 @@ rails db:migrate or rake db:migrate (both should be possible)
 ```
 
 That's all! Run the server with ```rails s```
-=======
