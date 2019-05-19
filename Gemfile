@@ -5,14 +5,15 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.6.1"
-
+ruby "2.6.3"
 # Use grape for custom api
 gem 'grape'
 # Use cors to support cross-site requests
 gem 'rack-cors', :require => 'rack/cors'
 # Use rails serializer to convert into valid json
 gem 'grape-active_model_serializers'
+# Use grape-swagger to create documentation and explore API
+gem 'grape-swagger'
 # gem 'simple_form'
 gem 'bootstrap'
 gem 'devise'
