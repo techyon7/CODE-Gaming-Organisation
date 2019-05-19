@@ -1,0 +1,239 @@
+<%= render 'layouts/navigation' %>
+<%= yield %>
+
+<%= render 'layouts/profiles'%>
+<%= yield%>
+
+<div class="wrapper middle-section">
+    <h1>Events</h1>
+    <div>
+        <%= form_tag(events_show_path) do %>
+            <%= text_field_tag :event, "", class: "event-search", placeholder: "Search"%>
+        <%= submit_tag 'Filter by', class: "btn btn-success", id:"search-button" %>
+        <% end %>
+   </div>
+    <%# 1st %>
+    <div class="event-split">
+        <div id="event-one">
+            <div class="event-header">
+                <%= image_tag "gameboy@2x.png", class: "special-logo" %>
+                <h2>Retro Game Night</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <div class="event-data">
+                <div class="data-container">
+                     <%= image_tag "address@2x.png", class: "special-address" %>
+                     <p>Eldenaer Str. 15 <br> 10247 Berlin</p>
+                </div>
+                <div class="data-container">
+                    <%= image_tag "appointment@2x.png", class: "special-appointment" %>
+                    <p>30.04.19</p>
+                </div>
+            </div>     
+        </div>          
+    
+        <div id="event-two">
+            <%= link_to "Sign up", root_path, class: "btn btn-primary", id:"signup-button-v3" %>
+            <div class="special-content">
+                 <ul>
+                    <div class="selector"> 
+                         <li class="special"> <p>Community</p> </li>
+                         <li class="special"> <p>Console</p> </li>
+                    </div>
+                    <div class="selector">
+                        <li class="special"> <p>Retro</p> </li>
+                         <li class="special"> <p>Casual/Competitive</p> </li>
+                     </div>
+
+                </ul> 
+            </div>        
+        </div>
+    </div>
+    <%# 2nd %>
+    <div class="event-split">
+        <div id="event-one">
+            <div class="event-header">
+                <%= image_tag "controller@2x.png", class: "special-logo" %>
+                <h2>Call of Duty Tourney</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <div class="event-data">
+                <div class="data-container">
+                     <%= image_tag "address@2x.png", class: "special-address" %>
+                     <p>Lohmühlenstraße 65 <br> 12435 Berlin</p>
+                </div>
+                <div class="data-container">
+                    <%= image_tag "appointment@2x.png", class: "special-appointment" %>
+                    <p>04.05.19</p>
+                </div>
+            </div>     
+        </div>          
+    
+        <div id="event-two">
+            <%= link_to "Sign up", root_path, class: "btn btn-primary", id:"signup-button-v3" %>
+            <div class="special-content">
+                 <ul>
+                    <div class="selector"> 
+                         <li class="special"> <p>Tournament</p> </li>
+                         <li class="special"> <p>PS4</p> </li>
+                    </div>
+                    <div class="selector">
+                        <li class="special"> <p>Console</p> </li>
+                         <li class="special"> <p>Competitive</p> </li>
+                     </div>
+
+                </ul> 
+            </div>        
+        </div>
+    </div>
+
+ <%# 3rd %>
+    <div class="event-split">
+        <div id="event-one">
+            <div class="event-header">
+                <%= image_tag "mouse@2x.png", class: "special-logo" %>
+                <h2>Apex Legends Evening</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <div class="event-data">
+                <div class="data-container">
+                     <%= image_tag "address@2x.png", class: "special-address" %>
+                     <p>Eldenaer Str. 15 <br> 10247 Berlin</p>
+                </div>
+                <div class="data-container">
+                    <%= image_tag "appointment@2x.png", class: "special-appointment" %>
+                    <p>04.05.19</p>
+                </div>
+            </div>     
+        </div>          
+    
+        <div id="event-two">
+            <%= link_to "Sign up", root_path, class: "btn btn-primary", id:"signup-button-v3" %>
+            <div class="special-content">
+                 <ul>
+                    <div class="selector"> 
+                         <li class="special"> <p>Community</p> </li>
+                         <li class="special"> <p>Keyboard and Mouse</p> </li>
+                    </div>
+                    <div class="selector">
+                        <li class="special"> <p>PC</p> </li>
+                         <li class="special"> <p>Competitive</p> </li>
+                     </div>
+
+                </ul> 
+            </div>        
+        </div>
+    </div>
+ <%# 4th %>
+    <div class="event-split">
+        <div id="event-one">
+            <div class="event-header">
+                <%= image_tag "crystal-ball@2x.png", class: "special-logo" %>
+                <h2>D&D Night</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <div class="event-data">
+                <div class="data-container">
+                     <%= image_tag "address@2x.png", class: "special-address" %>
+                     <p>Tabbertstr. 6a <br> 12459 Berlin</p>
+                </div>
+                <div class="data-container">
+                    <%= image_tag "appointment@2x.png", class: "special-appointment" %>
+                    <p>07.05.19</p>
+                </div>
+            </div>     
+        </div>          
+    
+        <div id="event-two">
+            <%= link_to "Sign up", root_path, class: "btn btn-primary", id:"signup-button-v3" %>
+            <div class="special-content">
+                 <ul>
+                    <div class="selector"> 
+                         <li class="special"> <p>Storytelling</p> </li>
+                         <li class="special"> <p>Board Games</p> </li>
+                    </div>
+                    <div class="selector">
+                        <li class="special"> <p>Community</p> </li>
+                         <li class="special"> <p>Casual</p> </li>
+                     </div>
+
+                </ul> 
+            </div>        
+        </div>
+    </div>
+    <%# 5th %>
+    <div class="event-split">
+        <div id="event-one">
+            <div class="event-header">
+                <%= image_tag "gameboy@2x.png", class: "special-logo" %>
+                <h2>Retro Game Night</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <div class="event-data">
+                <div class="data-container">
+                     <%= image_tag "address@2x.png", class: "special-address" %>
+                     <p>Eldenaer Str. 15 <br> 10247 Berlin</p>
+                </div>
+                <div class="data-container">
+                    <%= image_tag "appointment@2x.png", class: "special-appointment" %>
+                    <p>08.05.19</p>
+                </div>
+            </div>     
+        </div>          
+    
+        <div id="event-two">
+            <%= link_to "Sign up", root_path, class: "btn btn-primary", id:"signup-button-v3" %>
+            <div class="special-content">
+                 <ul>
+                    <div class="selector"> 
+                         <li class="special"> <p>Community</p> </li>
+                         <li class="special"> <p>Console</p> </li>
+                    </div>
+                    <div class="selector">
+                        <li class="special"> <p>Retro</p> </li>
+                         <li class="special"> <p>Casual/Competitive</p> </li>
+                     </div>
+
+                </ul> 
+            </div>        
+        </div>
+    </div>
+    <%# 6th %>
+    <div class="event-split">
+        <div id="event-one">
+            <div class="event-header">
+                <%= image_tag "mouse@2x.png", class: "special-logo" %>
+                <h2>Counter-Strike Evening</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <div class="event-data">
+                <div class="data-container">
+                     <%= image_tag "address@2x.png", class: "special-address" %>
+                     <p>Lohmühlenstraße 65 <br> 12435 Berlin</p>
+                </div>
+                <div class="data-container">
+                    <%= image_tag "appointment@2x.png", class: "special-appointment" %>
+                    <p>23.06.19</p>
+                </div>
+            </div>     
+        </div>          
+    
+        <div id="event-two">
+            <%= link_to "Sign up", root_path, class: "btn btn-primary", id:"signup-button-v3" %>
+            <div class="special-content">
+                 <ul>
+                    <div class="selector"> 
+                         <li class="special"> <p>First-Person-Shooter</p> </li>
+                         <li class="special"> <p>PC</p> </li>
+                    </div>
+                    <div class="selector">
+                        <li class="special"> <p>Community</p> </li>
+                         <li class="special"> <p>Casual</p> </li>
+                     </div>
+
+                </ul> 
+            </div>        
+        </div>
+    </div>
+
+</div>

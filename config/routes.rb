@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   get 'users/update'
 
 
+  mount API::Base, at: "/"
+
+  get 'events/index'
+
+  get 'events/show'
+
   get 'user/update'
   get 'user_events/update'
 
@@ -9,8 +15,10 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks'}
+
   get 'home/index'
+  resources :hardwares
 
   get "/privacy-policy", to: redirect("privacy_policy.html")
 
