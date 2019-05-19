@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  mount API::Base, at: "/"
+
   get 'events/index'
 
   get 'events/show'
