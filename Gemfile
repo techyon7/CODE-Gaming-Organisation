@@ -5,9 +5,16 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.6.1"
-
-gem 'simple_form'
+ruby "2.6.3"
+# Use grape for custom api
+gem 'grape'
+# Use cors to support cross-site requests
+gem 'rack-cors', :require => 'rack/cors'
+# Use rails serializer to convert into valid json
+gem 'grape-active_model_serializers'
+# Use grape-swagger to create documentation and explore API
+gem 'grape-swagger'
+# gem 'simple_form'
 gem 'bootstrap'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -36,6 +43,9 @@ gem 'turbolinks', '~> 5'
 gem 'json'
 gem 'webpacker', '~> 3.5'
 gem 'omniauth-google-oauth2'
+# gem 'figaro'
+gem 'cloudinary'
+
 
 
 # Use Capistrano for deployment
